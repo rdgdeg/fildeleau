@@ -86,7 +86,7 @@ export const site = {
     title: 'Restaurant-brasserie à Ath | Au Fil de l’Eau',
     description:
       'Brasserie au Chemin de Tenre à Ath : terrasse au canal, plaine de jeux, carte sur place. Réservez votre table sans passer par un agrégateur.',
-    ogImage: '/images/terrasse.jpg',
+    ogImage: '/images/salle.jpg',
   },
 
   proof: {
@@ -112,30 +112,12 @@ export const site = {
     slides: [
       {
         image: photo(
-          'terrasse.jpg',
-          'Terrasse et jardin d’Au Fil de l’Eau : fontaine, haies et tables dressées',
-          2048,
-          1331,
+          'salle.jpg',
+          'Convives trinquant au jardin d’Au Fil de l’Eau, près de la fontaine',
+          1366,
+          1366,
         ),
         caption: 'Une table au jardin, entre Ath et Rebaix',
-      },
-      {
-        image: photo(
-          'enseigne.jpg',
-          'Entrée du restaurant-brasserie Au Fil de l’Eau, Chemin de Tenre à Ath',
-          1366,
-          1366,
-        ),
-        caption: 'La carte sur le site, la table à la maison',
-      },
-      {
-        image: photo(
-          'salle.jpg',
-          'Convives trinquant au jardin, près de la fontaine',
-          1366,
-          1366,
-        ),
-        caption: 'Terrasse, jardin et fontaine dès les beaux jours',
       },
     ],
   },
