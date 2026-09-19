@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
+import { trackPage } from '../lib/track'
 import { Footer } from './Footer'
 import { Header } from './Header'
 import { MaquetteBadge } from './MaquetteBadge'
@@ -14,6 +15,7 @@ export function Layout() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    trackPage(pathname)
   }, [pathname])
 
   useEffect(() => {

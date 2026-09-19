@@ -17,6 +17,13 @@ Build de contrôle :
 npm run build
 ```
 
+## Suivi des visites
+
+Page interne, hors menu : `/admin`  
+Mot de passe par défaut : `ldmedia` (à changer via `ADMIN_PASSWORD` sur Vercel).
+
+En production, créez une base **KV** dans Vercel (Storage → Create Database → KV) puis redéployez, pour que l’historique survive aux redémarrages.
+
 ## Recycler pour un autre prospect
 
 Modifier **`src/data/site.ts`** (nom, adresse, téléphone, horaires, textes, images) et les photos. Les couleurs et polices se règlent dans `src/styles/index.css` (`@theme`). Le badge maquette se masque avec `showMaquetteBadge: false`.

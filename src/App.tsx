@@ -2,6 +2,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { AccesPage } from './pages/AccesPage'
+import { AdminPage } from './pages/AdminPage'
 import { CartePage } from './pages/CartePage'
 import { FaqPage } from './pages/FaqPage'
 import { GaleriePage } from './pages/GaleriePage'
@@ -18,6 +19,7 @@ export default function App() {
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
+          <Route path="/admin" element={<AdminPage />} />
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/carte" element={<CartePage />} />
